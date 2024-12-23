@@ -7,33 +7,15 @@ const Footer: React.FC = () => {
   return (
     <footer className="w-fit p-1 md:p-2 fixed bottom-0 right-0">
       <div className="flex justify-end">
-        <Button
+      <Link to="https://proofofme.fun">
+      <Button
           variant={'ghost'}
           size={'icon'}
           className="text-muted-foreground/50"
         >
-          <Link href="https://discord.gg/zRxaseCuGq" target="_blank">
-            <SiDiscord size={18} />
-          </Link>
+          <span>Back to Web</span>
         </Button>
-        <Button
-          variant={'ghost'}
-          size={'icon'}
-          className="text-muted-foreground/50"
-        >
-          <Link href="https://x.com/morphic_ai" target="_blank">
-            <SiX size={18} />
-          </Link>
-        </Button>
-        <Button
-          variant={'ghost'}
-          size={'icon'}
-          className="text-muted-foreground/50"
-        >
-          <Link href="https://git.new/morphic" target="_blank">
-            <SiGithub size={18} />
-          </Link>
-        </Button>
+        </Link>
       </div>
     </footer>
   )
