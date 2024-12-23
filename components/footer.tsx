@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <Link href="https://proofofme.fun">
           <Button
             variant={'ghost'}
-            size={'icon'}
+            // size={'icon'}
             className="text-muted-foreground/50"
           >
             <span>Back to Web</span>
