@@ -10,7 +10,7 @@ export const Header: React.FC = async () => {
       <div>
         <a href="/">
           {/* <IconLogo className={cn('w-5 h-5')} /> */}
-          <img src="/Logo-black.png" className={cn('w-5 h-5')} />
+          <img src="/Logo-black.png" className={cn('w-10 h-10')} />
           <span className="sr-only">Proof of Me</span>
         </a>
       </div>
