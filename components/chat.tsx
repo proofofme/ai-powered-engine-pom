@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
+import { useTheme } from 'next-themes'
 import { ChatPanel } from './chat-panel'
 import { ChatMessages } from './chat-messages'
 import { useUIState } from 'ai/rsc'
@@ -12,6 +13,8 @@ type ChatProps = {
 }
 
 export function Chat({ id, query }: ChatProps) {
+  const { theme } = useTheme()
+  console.log(theme)
   const path = usePathname()
   const [messages] = useUIState()
 
